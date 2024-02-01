@@ -1,0 +1,41 @@
+{
+  "name": "chatting-application",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "http-server -c-1",
+    "test": "npm run test:e2e",
+    "test:structure": "jest",
+    "test:e2e": "npx playwright test",
+    "test:layout": "npx playwright test 2.layout.spec.ts",
+    "test:controller": "npx playwright test 3.controller.spec.ts",
+    "postinstall": "npx playwright install --with-deps"
+  },
+  "author": "Yahya Gilany <gilanyym@ucmail.uc.edu>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@babel/core": "^7.23.9",
+    "@faker-js/faker": "^8.4.0",
+    "@types/jest": "^29.5.11",
+    "bootstrap": "^4.5.0",
+    "directory-tree": "^3.5.1",
+    "http-server": "^14.1.1",
+    "jest": "^29.7.0",
+    "lodash": "^4.17.21",
+    "regenerator-runtime": "^0.14.1",
+    "rewire": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@playwright/test": "^1.41.1",
+    "@testing-library/dom": "^9.3.4",
+    "@testing-library/jest-dom": "^6.4.1",
+    "@types/node": "^20.11.14",
+    "babel-plugin-rewire": "^1.2.0",
+    "eslint": "^8.56.0",
+    "expect-playwright": "^0.8.0",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
+  }
+}
