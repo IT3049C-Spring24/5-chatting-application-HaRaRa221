@@ -34,9 +34,10 @@ function formatMessage(message, myNameInput) {
     `;
   }
 }
-function fetchMessages() {
-  const response = fetch(serverUrl);
-  const messages = response.json();
+async function fetchMessages() {
+  const response = await fetch(serverUrl);
+  const messages = await response.json();
+  console.log(messages);
   return messages;
 }
 async function updateMessages() {
